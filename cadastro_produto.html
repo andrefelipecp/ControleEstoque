@@ -30,6 +30,36 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+        /* como criar funções */
+        function validarTamanhoCampoNome (){
+            var nomeProduto = jQuery ('#nomeProduto') .val(); //jQuery para obter o valor do campo 
+            var tamanho = nomeProduto.length //tamanho da string
+            if (tamanho < 5) {
+                alert('Andre Felix');
+                return false
+            } else if (tamanho > 100) {
+                alert('Andre gay');
+                return false
+            }
+            
+            return true
+        }
+        
+        function validarQuantidadeMinima (quantidadeMinima){
+            var valor = parseInt (quantidadeMinima); //tamanho da string
+            if (valor < 0) {
+                alert('Andre Felix');
+                return false
+            } 
+            
+            return true
+        }
+        
+        
+        
+                
+    </script>
 </head>
 
 <body>
@@ -92,7 +122,7 @@
                 <div class="control-group">
                   <label class="control-label">Nome do Produto:</label>
                   <div class="controls">
-                    <input id="nomeProduto" name="nomeProduto" type="text" placeholder="Digite o nome do Produto" class="input-xlarge" required="">
+                    <input id="nomeProduto" onblur="return validarTamanhoCampoNome();" name="nomeProduto" type="text" placeholder="Digite o nome do Produto" class="input-xlarge" required="">
                     
                   </div>
                 </div>
@@ -142,7 +172,7 @@
                 <div class="control-group">
                   <label class="control-label">Quantidade mínima</label>
                   <div class="controls">
-                    <input id="quantidadeNini" name="quantidadeNini" type="text" placeholder="Digite a quantidade mínima" class="input-xlarge" required="">
+                    <input id="quantidadeNini" onblur="validarQuantidadeMinima(this.value);" name="quantidadeNini" type="text" placeholder="Digite a quantidade mínima" class="input-xlarge" required="">
                     
                   </div>
                 </div>
