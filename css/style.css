@@ -1,0 +1,28 @@
+.menu{
+    
+}
+
+.menu .btn-group{
+    white-space: normal;
+}
+
+.menu button{
+    max-width : 150px;
+    min-width : 50px;
+}
+
+.menu .boxAcoes{
+    min-height: 150px;
+}
+
+.menu .boxOpcoesCaixa{
+   min-height: 150px; 
+}
+
+.menu .boxContasAPagar{
+    min-height: 150px;
+}
+
+.menu .boxContasAReceber{
+   min-height: 150px; 
+}
