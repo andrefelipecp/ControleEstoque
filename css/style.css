@@ -1,3 +1,42 @@
+@media (min-width:980px) {
+    .menu button{
+       font-size: 14px;
+       margin: 10px;
+       max-width : 350px;
+       min-width : 200px;
+    }
+    .boxOpcoesCaixa div.centralizarDiv{
+       width : 400px;
+    }
+    .boxOpcoesCaixa button{
+       min-width : 100%;
+    }
+}
+@media (min-width:481px) and (max-width:979px) {
+   .menu button{
+       font-size: 12px;
+       margin: 10px;
+       max-width : 350px;
+       min-width : 100%;
+    }
+}
+@media (max-width:480px) {
+   .menu button{
+       font-size: 12px;
+       margin: 5px;
+       max-width : 350px;
+       min-width : 100%;
+    }
+}
+
+body {
+   min-width : 216px;
+}
+
+.centralizarDiv{
+    margin: 0 auto;
+}
+
 .menu{
     
 }
@@ -6,23 +45,11 @@
     white-space: normal;
 }
 
-.menu button{
-    max-width : 150px;
-    min-width : 50px;
-}
-
 .menu .boxAcoes{
-    min-height: 150px;
-}
-
-.menu .boxOpcoesCaixa{
-   min-height: 150px; 
 }
 
 .menu .boxContasAPagar{
-    min-height: 150px;
 }
 
 .menu .boxContasAReceber{
-   min-height: 150px; 
 }
